@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import HeroPage from './components/HeroPage/Hero'
-
+import { Outlet } from 'react-router-dom'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <HeroPage/>
+      <Outlet/>
     </>
   )
 }

@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { BookOpen, Users, Award, BarChart3, ChevronRight, Play, Star, GraduationCap } from 'lucide-react';
-
+import { useNavigate } from 'react-router-dom';
 export default function HeroPage() {
   const [activeFeature, setActiveFeature] = useState(0);
+  const navigate = useNavigate();
   
   const features = [
     { icon: BookOpen, title: "Course Management", desc: "Easily manage courses, subjects, and curriculum" },
@@ -40,7 +41,7 @@ export default function HeroPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center gap-2 transition-colors">
+            <button onClick={()=>navigate('/signup')} className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center gap-2 transition-colors">
               Get Started Free
               <ChevronRight size={20} />
             </button>
