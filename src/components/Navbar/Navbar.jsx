@@ -30,21 +30,21 @@ const navigate = useNavigate();
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a
-                href="#"
+              <button
+                onClick={()=>navigate("/")}
                 className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 px-3 py-2 rounded-lg text-sm font-medium transition duration-200 hover:bg-blue-50"
               >
                 <Home className="w-4 h-4" />
-                <span onClick={()=>navigate("/")} >Home</span>
-              </a>
+                <span  >Home</span>
+              </button>
               
-              <a
-                href="#"
+              <button
+                onClick={()=>navigate("/signup")}
                 className="flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-blue-700 hover:to-indigo-700 transition duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
               >
                 <UserPlus className="w-4 h-4" />
-                <span onClick={()=>navigate("/signupx")}>Register School</span>
-              </a>
+                <span >Register School</span>
+              </button>
             </div>
           </div>
 
@@ -67,21 +67,21 @@ const navigate = useNavigate();
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50 rounded-lg mt-2 mb-4">
-              <a
-                href="#"
+              <button
+                onClick={()=>navigate("/")}
                 className="flex items-center space-x-3 text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-lg text-base font-medium transition duration-200 hover:bg-white"
               >
                 <Home className="w-5 h-5" />
                 <span>Home</span>
-              </a>
+              </button>
               
-              <a
-                href="#"
+              <button
+                onClick={()=>navigate("/signup")}
                 className="flex items-center space-x-3 text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-lg text-base font-medium transition duration-200 hover:bg-white"
               >
                 <UserPlus className="w-5 h-5" />
                 <span>Register School</span>
-              </a>
+              </button>
             </div>
           </div>
         )}

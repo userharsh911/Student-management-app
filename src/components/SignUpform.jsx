@@ -166,7 +166,7 @@ export default function SignUpform() {
             <p className="text-sm text-gray-600">
               Already have an account?{' '}
 
-              <button onClick={()=>navigate("/login")} href="#" className="text-blue-600 cursor-pointer hover:text-blue-700 font-medium">
+              <button onClick={()=>navigate("/login")} className="text-blue-600 cursor-pointer hover:text-blue-700 font-medium">
                 Sign in here
               </button>
             </p>
