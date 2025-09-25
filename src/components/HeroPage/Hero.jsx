@@ -45,9 +45,9 @@ export default function HeroPage() {
               Get Started Free
               <ChevronRight size={20} />
             </button>
-            <button className="border border-gray-400 hover:bg-gray-800 px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center gap-2 transition-colors">
-              <Play size={20} />
-              Watch Demo
+            <button onClick={()=>navigate("/student-portal")} className="border border-gray-400 hover:bg-gray-800 px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center gap-2 transition-colors">
+              
+              Try Demo
             </button>
           </div>
         </div>

@@ -6,6 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } 
 import SignUpform from './components/SignUpform.jsx'
 import HeroPage from './components/HeroPage/Hero.jsx'
 import LoginForm from './components/LoginForm.jsx'
+import StudentPortal from './components/StudentPortal.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,6 +14,7 @@ const router = createBrowserRouter(
       <Route path='/' element={<HeroPage />}/>
       <Route path='signup' element={<SignUpform/>}/>
       <Route path='login' element={<LoginForm/>}/>
+      <Route path='student-portal' element={<StudentPortal/>}/>
     </Route>
   )
 )

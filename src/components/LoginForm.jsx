@@ -130,9 +130,9 @@ export default function LoginForm() {
             </div>
 
             {/* Demo Login Button */}
-            <div className="w-full bg-gray-50 border-2 border-gray-200 text-gray-700 py-3 px-4 rounded-lg font-semibold hover:bg-gray-100 hover:border-gray-300 focus:ring-4 focus:ring-gray-200 transition duration-200 cursor-pointer text-center">
-              Try Demo Account
-            </div>
+            <button onClick={()=>navigate("/student-portal")} className="w-full bg-gray-50 border-2 border-gray-200 text-gray-700 py-3 px-4 rounded-lg font-semibold hover:bg-gray-100 hover:border-gray-300 focus:ring-4 focus:ring-gray-200 transition duration-200 cursor-pointer text-center">
+                Try Demo Account
+            </button>
           </div>
 
           {/* Footer */}
